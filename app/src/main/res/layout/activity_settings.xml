@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Font Size Input -->
+    <EditText
+        android:id="@+id/fontSizeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Font Size (e.g., 16)"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Font Color Selector -->
+    <TextView
+        android:id="@+id/fontColorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Font Color:"
+        android:layout_marginBottom="8dp" />
+
+    <GridLayout
+        android:id="@+id/fontColorGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Background Color Selector -->
+    <TextView
+        android:id="@+id/bgColorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Background Color:"
+        android:layout_marginBottom="8dp" />
+
+    <GridLayout
+        android:id="@+id/bgColorGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Save Settings Button -->
+    <Button
+        android:id="@+id/saveSettingsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Settings" />
+</LinearLayout>
